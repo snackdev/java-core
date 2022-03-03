@@ -1,3 +1,4 @@
 rootProject.name = 'java-core'
+include 'java-core-basic'
 include 'java-core-stream'
 

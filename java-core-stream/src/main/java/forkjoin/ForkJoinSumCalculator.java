@@ -1,5 +1,6 @@
 package forkjoin;
 
+import java.util.List;
 import java.util.concurrent.RecursiveTask;
 
 public class ForkJoinSumCalculator extends RecursiveTask<Long> {
@@ -40,6 +41,7 @@ public class ForkJoinSumCalculator extends RecursiveTask<Long> {
         for (int i = start; i < end; i++) {
             sum += numbers[i];
         }
+        List.of()
 
         return sum;
     }
