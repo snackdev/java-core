@@ -1,6 +1,6 @@
 package programmers;
 
-import util.ToStringUtil;
+import util.CustomUtil;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
@@ -38,7 +38,7 @@ public class StackQueue001 {
 
 
     public static void main(String[] args) {
-        System.out.println(ToStringUtil.arrayToString(solution(
+        System.out.println(CustomUtil.arrayToString(solution(
                 new int[]{93, 99, 99},
                 new int[]{1, 30, 5}
         )));

@@ -1,6 +1,14 @@
 package util;
 
-public class ToStringUtil {
+import java.util.Collection;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
+public class CustomUtil {
+    public static Collection<Integer> toCollection(int[] intArr) {
+        return IntStream.of(intArr).boxed().collect(Collectors.toList());
+    }
+
     public static String arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder("[");
         for (int a : arr) {
@@ -10,4 +18,5 @@ public class ToStringUtil {
         sb.append("]");
         return sb.toString();
     }
+
 }
